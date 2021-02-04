@@ -76,3 +76,10 @@ Stop the application with pm2
 ```bash
 npm run prod:stop
 ```
+
+#### If you like the template consider dropping me a coffee
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/donate?hosted_button_id=BSFX8LCPHW2AE)
+  
+<br>  
+<br>  
