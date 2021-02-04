@@ -12,7 +12,8 @@
     "test-watch": "mocha-typescript-watch",
     "prod:install": "npm install --production",
     "prod:build": "tsc && npm run copy-public",
-    "prod-start": "NODE_ENV=production pm2 start dist/app.js",
+    "prod:start": "NODE_ENV=production pm2 start dist/app.js --name my-application-name",
+    "prod:stop": "NODE_ENV=production pm2 stop my-application-name",
     "copy-public": "copyfiles -u 1 public/*/* dist -a"
   },
   "author": "Markus Peitl",
@@ -39,7 +40,6 @@
     "pm2": "^4.5.4",
     "socket.io": "^2.2.0",
     "socket.io-client": "^3.1.1",
-    "tsc": "^1.20150623.0",
     "typescript": "^3.9.7"
   }
 }
