@@ -1,5 +1,5 @@
 {
-  "name": "pmmreloadedsrv",
+  "name": "node-ts-ex-templte",
   "version": "1.0.0",
   "description": "",
   "main": "dist/app.js",
@@ -15,7 +15,7 @@
     "prod-start": "NODE_ENV=production pm2 start dist/app.js",
     "copy-public": "copyfiles -u 1 public/*/* dist -a"
   },
-  "author": "",
+  "author": "Markus Peitl",
   "license": "ISC",
   "devDependencies": {
     "@types/chai": "^4.2.14",
@@ -35,10 +35,11 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^3.0.2",
-    "request": "^2.88.0",
+    "node-fetch": "^2.6.1",
+    "pm2": "^4.5.4",
     "socket.io": "^2.2.0",
     "socket.io-client": "^3.1.1",
-    "typescript": "^3.9.7",
-    "pm2": "^4.5.4"
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.9.7"
   }
 }
