@@ -15,6 +15,7 @@ app.set("view engine", "handlebars");
 const projects: string[] = ["project1", "project2", "project3", "project4", "project5", "project6", "project7", "project8"];
 
 app.use(express.static(path.join(__dirname, "/public")));
+app.use(express.static(path.join(__dirname, "/client")));
 
 app.get("/", (req, res) => {
     res.render("projects", {
@@ -28,7 +29,7 @@ app.get("/home", (req, res) => {
     });
 });
 
-const socketHandler: SocketIO.Server = SocketIO(server);
+const socketHandler: SocketIO.Server = new SocketIO.Server(server)
 
 socketHandler.on("connection", (socketConn: SocketIO.Socket) => {
     console.log("Socket connected to server!");
