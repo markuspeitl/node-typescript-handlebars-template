@@ -14,32 +14,35 @@
     "prod:build": "tsc && npm run copy-public",
     "prod:start": "NODE_ENV=production pm2 start dist/app.js --name my-application-name",
     "prod:stop": "NODE_ENV=production pm2 stop my-application-name",
-    "copy-public": "copyfiles -u 1 public/*/* dist -a"
+    "copy-public": "copyfiles -u 1 src/public/*/* dist -a"
   },
   "author": "Markus Peitl",
   "license": "ISC",
   "devDependencies": {
-    "@types/chai": "^4.2.14",
+    "@types/chai": "^4.2.18",
+    "@types/cookie": "^0.4.0",
+    "@types/cors": "^2.8.10",
     "@types/express": "^4.17.11",
     "@types/express-handlebars": "0.0.33",
-    "@types/mocha": "^5.2.7",
+    "@types/mocha": "^8.2.2",
     "@types/socket.io": "^2.1.13",
     "@types/socket.io-client": "^1.4.35",
-    "chai": "^4.3.0",
+    "chai": "^4.3.4",
     "copyfiles": "^2.4.1",
-    "mocha": "^6.2.3",
+    "mocha": "^8.4.0",
     "nodemon": "^2.0.7",
     "npm-run-all": "^4.1.5",
     "source-map-support": "^0.5.19",
     "tslint": "^5.20.1"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-handlebars": "^3.0.2",
     "node-fetch": "^2.6.1",
-    "pm2": "^4.5.4",
+    "pm2": "^4.5.6",
     "socket.io": "^2.2.0",
     "socket.io-client": "^3.1.1",
-    "typescript": "^3.9.7"
+    "typescript": "^4.2.4"
   }
 }
