@@ -17,7 +17,7 @@
     "copy-public": "copyfiles -u 1 src/public/*/* dist -a"
   },
   "author": "Markus Peitl",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "devDependencies": {
     "@types/chai": "^4.2.18",
     "@types/cookie": "^0.4.0",
