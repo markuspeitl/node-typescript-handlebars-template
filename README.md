@@ -24,7 +24,6 @@ Has some pre defined **dependencies**:
 **Express** as the server framework for nodejs  
 **Socket.IO** to provide socket based communication  
 **node-fetch** to provide a simple http client (as development for request was stopped)  
-**pm2** for starting the application in production  
 
 ## How to run
 
@@ -65,16 +64,10 @@ Build the typescript sources in production mode + set process.env.NODE_ENV="prod
 npm run prod:build
 ```
 
-Run on production using pm2  
+Run on production
 
 ```bash
 npm run prod:start
-```
-
-Stop the application with pm2  
-
-```bash
-npm run prod:stop
 ```
 
 #### If you like the template consider dropping me a coffee
